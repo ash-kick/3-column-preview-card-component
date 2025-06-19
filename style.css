@@ -1,0 +1,119 @@
+.lexend-deca-font {
+     font-family: "Lexend Deca", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: 400;
+     font-style: normal;
+}
+
+html,
+body {
+     display: flex;
+     justify-content: center;
+     min-height: 100vh;
+     font-size: 15px;
+     font-family: "Lexend Deca", sans-serif;
+}
+
+h1 {
+     color: white;
+     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+     /* front end mentor font not working so using this one */
+     text-transform: uppercase;
+     margin-bottom: 10px;
+}
+
+.sedan-section {
+     background-color: hsl(31, 77%, 52%);
+}
+
+.suv-section {
+     background-color: hsl(184, 100%, 22%);
+}
+
+.luxury-section {
+     background-color: hsl(179, 100%, 13%);
+}
+
+p {
+     color: white;
+     font-weight: 200;
+     line-height: 1.5;
+}
+
+#sedan-button {
+     color: hsl(31, 77%, 52%);
+}
+
+#suv-button {
+     color: hsl(184, 100%, 22%);
+}
+
+#luxury-button {
+     color: hsl(179, 100%, 13%);
+}
+
+button {
+     background-color: white;
+     border: none;
+     border-radius: 30px;
+}
+
+img {
+     width: 3rem;
+}
+
+@media (max-width: 600px) {
+     html,
+     body {
+          height: 100%;
+          flex-direction: column;
+          padding: 10px;
+     }
+
+     main {
+          height: auto;
+          width: 70%;
+          align-self: center;
+          border-radius: 15px;
+     }
+
+     .luxury-section,
+     .sedan-section,
+     .suv-section {
+          padding: 3rem;
+          display: flex;
+          flex-direction: column;
+     }
+
+     button {
+          height: 3rem;
+          width: 10rem;
+          margin: 20px;
+     }
+}
+
+@media (min-width: 600px) {
+     main {
+          display: flex;
+          align-self: center;
+          height: 30rem;
+          width: 55rem;
+          border-radius: 10px;
+          overflow: hidden;
+     }
+
+     .luxury-section,
+     .sedan-section,
+     .suv-section {
+          padding: 3rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+     }
+
+     button {
+          height: 3rem;
+          width: 10rem;
+          margin: 20px;
+     }
+}
